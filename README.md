@@ -52,10 +52,7 @@ Ensure your project has the following files in the root directory:
     *   Replace `YOUR_REGION` with the Google Cloud region you want to deploy to (e.g., `us-central1`, `europe-west1`).
     *   The `--allow-unauthenticated` flag makes the service publicly accessible. Remove this flag if you want to manage access using IAM.
 
-3.  **Confirm Deployment:**
-    The command will prompt you for confirmation. It will then trigger a Cloud Build process to build the container image and deploy it to Cloud Run.
-
-4.  **Test Your Service:**
+3.  **Test Your Service:**
     Once the deployment is complete, `gcloud` will output the URL of your deployed service. 
 
     Install cmcp
@@ -70,30 +67,31 @@ Ensure your project has the following files in the root directory:
 
     Output:
     ```json
-    { "meta": null,
-    "nextCursor": null,
-    "tools": [
-    {
-      "name": "add",
-      "description": "Add two numbers",
-      "inputSchema": {
-        "properties": {
-          "a": {
-            "title": "A",
-            "type": "integer"
-          },
-          "b": {
-            "title": "B",
-            "type": "integer"
-          }
-        },
-        "required": [
-          "a",
-          "b"
-        ],
-        "title": "addArguments",
-        "type": "object"
-        }
+    {   
+        "meta": null,
+        "nextCursor": null,
+        "tools": [
+        {
+            "name": "add",
+            "description": "Add two numbers",
+            "inputSchema": {
+                "properties": {
+                "a": {
+                    "title": "A",
+                    "type": "integer"
+                },
+                "b": {
+                    "title": "B",
+                    "type": "integer"
+                }
+                },
+                "required": [
+                    "a",
+                    "b"
+                ],
+                    "title": "addArguments",
+                    "type": "object"
+                }
         }
     ]}
     ```
@@ -108,12 +106,12 @@ Ensure your project has the following files in the root directory:
     {
         "meta": null,
         "content": [
-    {
-      "type": "text",
-      "text": "3",
-      "annotations": null
-    }
-    ],
-    "isError": false
+            {
+                "type": "text",
+                "text": "3",
+                "annotations": null
+            }
+        ],
+        "isError": false
     }
     ```
