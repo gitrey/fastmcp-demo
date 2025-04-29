@@ -25,7 +25,6 @@ Ensure your project has the following files in the root directory:
     ```txt
     fastmcp
     asyncio
-    uvicorn
     ```
 *   `Procfile`: Tells Cloud Run how to start your web server. Since `uvicorn` is listed as a dependency, it's recommended to use it for running the application.
     ```Procfile
