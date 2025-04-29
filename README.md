@@ -29,7 +29,7 @@ Ensure your project has the following files in the root directory:
     ```
 *   `Procfile`: Tells Cloud Run how to start your web server. Since `uvicorn` is listed as a dependency, it's recommended to use it for running the application.
     ```Procfile
-    web: uvicorn server:mcp --host 0.0.0.0 --port $PORT
+    web: python server.py
     ```
     *(Note: This assumes your FastMCP instance is named `mcp` within your `server.py` file. Adjust `server:mcp` if your filename or instance name is different.)*
 
