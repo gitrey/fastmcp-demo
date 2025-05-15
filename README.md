@@ -2,6 +2,8 @@
 
 This is a simple demonstration application using the FastMCP framework.
 
+Sample `ADK agent` to call this MCP server is avilable in this repo: https://github.com/gitrey/adk-fastmcp
+
 ## Prerequisites
 
 Before deploying, ensure you have the following:
@@ -44,8 +46,7 @@ Ensure your project has the following files in the root directory:
     ```bash
     gcloud run deploy fastmcp-demo \
         --source . \
-        --region YOUR_REGION \
-        --allow-unauthenticated
+        --region YOUR_REGION
     ```
     *   Replace `fastmcp-demo` with your desired service name.
     *   Replace `YOUR_REGION` with the Google Cloud region you want to deploy to (e.g., `us-central1`, `europe-west1`).
